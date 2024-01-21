@@ -1,0 +1,160 @@
+
+body {
+  background-image:radial-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%)) ;
+  /* margin: 0; */
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin:0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+main{
+  width: 320px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid; */
+  /* background-color: snow; */
+}
+
+header{
+margin-bottom: 5rem;
+width:250px ;
+ border: 3px solid hsl(217, 16%, 45%);
+ border-radius: 5px;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 17px;
+}
+
+header img{
+  width:80px ;
+  height: 70px;
+}
+
+header div{
+  background-color: snow;
+  width: 70px;
+  height: 80px;
+  border-radius:5px;
+  text-align: center;
+  color: hsl(229, 64%, 46%);
+  box-shadow:1px 1px 2px hsl(229, 25%, 31%) ;
+}
+
+header div p:first-of-type{
+  margin-bottom: -30px;
+  font-family: 200;
+}
+
+header div p:not(:first-of-type){
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+section{
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position-x: 45px;
+  background-position-y: 40px;
+}
+
+.paper, .rock,.scissors{
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+  background-color: snow;
+  border: 10px solid;
+}
+
+
+.paper{
+  border-color: hsl(230, 89%, 62%);
+  flex-basis: auto;
+}
+
+.rock {
+  order: 3;
+  margin-right: 5rem;
+  border-color: hsl(349, 71%, 52%) ;
+}
+
+.scissors{
+  border-color: hsl(39, 89%, 49%);
+}
+
+button{
+  margin-top: 5rem;
+  width: 100px;
+  padding-block: 4px;
+  background-color: transparent;
+  color:snow;
+  text-transform: uppercase;
+  border: 1px solid snow;
+  border-radius:5px;
+}
+
+.modal{
+  text-align: center;
+}
+
+.modal h1{
+  text-transform: uppercase;
+}
+.modal img{
+  margin-block: 2rem;
+
+}
+
+.game{
+  /* border: 1px solid; */
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player , .cpu{
+  width: 130px;
+}
+
+.game div p{
+  color: snow;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.result button{
+  background-color: snow;
+  color: hsl(237, 49%, 15%);
+  font-weight:700;
+  width: 150px;
+}
+
+.result{
+  text-align: center;
+}
+
+.result p{
+  font-size: 20px;
+  font-weight: 900;
+  text-transform:uppercase;
+  color: snow;
+}
